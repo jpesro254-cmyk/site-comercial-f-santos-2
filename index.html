@@ -1,0 +1,250 @@
+```html id="site_completo_comercial_fsantos"
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Comercial F Santos - Supermercado</title>
+
+<meta name="description" content="Comercial F Santos - supermercado com frutas, alimentos, bebidas, limpeza e muito mais.">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#eef4fb;
+}
+
+header{
+background:#0f4c81;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+header img{
+width:170px;
+}
+
+#pesquisa{
+margin-top:10px;
+padding:10px;
+width:60%;
+border-radius:5px;
+border:none;
+}
+
+.categorias{
+padding:20px;
+}
+
+h2{
+background:#0f4c81;
+color:white;
+padding:10px;
+border-radius:6px;
+}
+
+.produtos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:10px;
+}
+
+.produto{
+background:white;
+border-radius:10px;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.produto img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:8px;
+}
+
+button{
+background:#0f4c81;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#08345a;
+}
+
+.carrinho{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0f4c81;
+color:white;
+padding:15px;
+border-radius:10px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="https://chatgpt.com/backend-api/estuary/content?id=file_000000001860720e88fe5f1bf35dff50&ts=492621&p=fs&cid=1&sig=9444ac7d8c5f73c43991a7a6e63e140aee037b23f3760b40dc18b7b368185ed3&v=0">
+
+<h1>Comercial F Santos</h1>
+
+<p>Tudo o que você precisa, pertinho de você!</p>
+
+<input type="text" placeholder="Pesquisar produto...">
+
+</header>
+
+<div class="categorias">
+
+<h2>🍎 Frutas e Verduras</h2>
+
+<div class="produtos">
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+<h3>Maçã</h3>
+<button onclick="add('Maçã')">Adicionar</button>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e">
+<h3>Banana</h3>
+<button onclick="add('Banana')">Adicionar</button>
+</div>
+
+<div class="produto">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3DRPxLp5XH4U1fUPLQwkWQn7fUd368gb2lUCx9qEKuUb5LhktbVpEcMTg_3EP_rx99pWkU_cdJ_ZETZlfswgCjwu5DhipxhHqNXYkPJ0&s=10">
+<h3>Tomate</h3>
+<button onclick="add('Tomate')">Adicionar</button>
+</div>
+
+<div class="produto">
+<img src="https://hortifrutibr.vtexassets.com/arquivos/ids/164640/Laranja-Seleta.jpg?v=638889856235930000">
+<h3>Laranja</h3>
+<button onclick="add('Laranja')">Adicionar</button>
+</div>
+
+</div>
+
+<h2>🥤 Refrigerantes</h2>
+
+<div class="produtos">
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97">
+<h3>Coca-Cola</h3>
+<button onclick="add('Coca-Cola')">Adicionar</button>
+</div>
+
+<div class="produto">
+<img src="https://www.imigrantesbebidas.com.br/bebida/images/products/full/4614-refrigerante-guarana-antarctica-1l.jpg">
+<h3>Guaraná</h3>
+<button onclick="add('Guaraná')">Adicionar</button>
+</div>
+
+</div>
+
+<h2>🥛 Leites</h2>
+
+<div class="produtos">
+
+<div class="produto">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-lADD9-iQczJ_q8s4W-N3WFfe8aCxM_S1Q&s">
+<h3>Leite Integral</h3>
+<button onclick="add('Leite Integral')">Adicionar</button>
+</div>
+
+<div class="produto">
+<img src="https://destro.fbitsstatic.net/img/p/leite-em-po-piracanjuba-integral-400g-71135/257671-1.jpg?w=500&h=500&v=202501231555&qs=ignore">
+<h3>Leite em Pó</h3>
+<button onclick="add('Leite em Pó')">Adicionar</button>
+</div>
+
+</div>
+
+<h2>🧴 Produtos de Limpeza</h2>
+
+<div class="produtos">
+
+<div class="produto">
+<img src="https://www.sorpack.com.br/storage/empresas/14012344000125/produtos/tWnqgRTGeTlERZG9vfHZc8X4LcQyJLDFqyHYm3Dy_principal.jpeg">
+<h3>Detergente</h3>
+<button onclick="add('Detergente')">Adicionar</button>
+</div>
+
+<div class="produto">
+<img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m77zs1xc0e5u49">
+<h3>Sabão em Pó</h3>
+<button onclick="add('Sabão em pó')">Adicionar</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="carrinho">
+🛒 Carrinho: <span id="total">0</span>
+</div>
+
+<div class="whatsapp" onclick="enviarPedido()">
+📱
+</div>
+
+<script>
+
+let carrinho=[]
+
+function add(produto){
+
+carrinho.push(produto)
+
+document.getElementById("total").innerText=carrinho.length
+
+}
+
+function enviarPedido(){
+
+let texto="Pedido do site Comercial F Santos:%0A"
+
+carrinho.forEach(p=>{
+texto += "- "+p+"%0A"
+})
+
+window.open("https://wa.me/5586995161884?text="+texto)
+
+}
+
+</script>
+
+</body>
+</html>
+```
